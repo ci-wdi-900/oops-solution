@@ -1,4 +1,4 @@
-function Stack() {
+const Stack = function() {
   return {
     items: [],
 
@@ -16,6 +16,25 @@ function Stack() {
   }
 }
 
+const Queue = function() {
+  return {
+    items: [],
+
+    add: function(item) {
+      this.items.push(item);
+    },
+
+    remove: function() {
+      return this.items.shift();
+    },
+
+    peek: function() {
+      return this.items[0];
+    }
+  }
+}
+
 module.exports = {
   Stack,
+  Queue,
 }
