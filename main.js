@@ -1,4 +1,4 @@
-const Stack = function() {
+const Stack = () => {
   return {
     items: [],
 
@@ -16,7 +16,7 @@ const Stack = function() {
   }
 }
 
-const Queue = function() {
+const Queue = () => {
   return {
     items: [],
 
